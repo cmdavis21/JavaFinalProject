@@ -24,12 +24,9 @@ public class Student
     public void enrollToCourse( Course course )
     {
         //TODO implement this method
-        //is the student already enrolled?
-        //System.out.println("Student is enrolled in these courses: " + \nstudent.getModule());
-
-        //display courses available to students, if not enrolled
-        //for each students' enrolled modules, compare to course list and find similarities
-        //for (Student students.getModule() : Course courses) { return unenrolled courses list; }
+        if(!isAttendingCourse(course.getCode())) {
+            courses.add(course);
+        }
     }
 
     public void registerApprovedCourse( Course course )
@@ -41,12 +38,12 @@ public class Student
     public boolean isAttendingCourse( String courseCode )
     {
         //TODO implement this method
-        //scan students.getModule() and see what courses are returned, if any
-        for (Course course : courses) {
-            if(Course course.getModule() > 0) {
-                System.out.println(Course course.getModule());
+        //gets courses from courses list
+        for(Course courses : courses) {
+            //get courses code and see if it equals courseCode
+            if(courses.getCode().equals(courseCode)) {
+                System.out.println("Student is already enrolled " + courseCode + ".");
                 return true;
-            }
         }
         return false;
     }
@@ -60,6 +57,6 @@ public class Student
     @Override
     public String toString()
     {
-        return "Student {" + super.toString() + "}";
+        return "Student {" + super.toString() + courses"}";
     }
 }

@@ -21,8 +21,8 @@ public class Main
         int option = 0;
         do
         {
-            PrinterHelper.showMainMenu();
-            option = scanner.nextInt();
+            PrinterHelper.showMainMenu(); //terminal options menu
+            option = scanner.nextInt(); //accepts integer input
             switch ( option )
             {
                 case 1:

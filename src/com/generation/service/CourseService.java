@@ -79,10 +79,12 @@ public class CourseService
     public void showSummary()
     {
         System.out.println( "Available Courses:" );
+        //grabbing all key values of string type from courses map
         for ( String key : courses.keySet() )
         {
-            Course course = courses.get( key );
-            System.out.println( course );
+            //creating a new instance of Course type which stores keys from courses map
+            Course course = courses.get( key ); //java is statically type my give a type to Course
+            System.out.println( course ); //printing variable
         }
         System.out.println( "Enrolled Students" );
         for ( String key : enrolledStudents.keySet() )
