@@ -1,5 +1,6 @@
 package com.generation.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -35,7 +36,7 @@ public class Student
     }
 
 
-    public boolean isAttendingCourse( String courseCode )
+    public isAttendingCourse(String courseCode )
     {
         //TODO implement this method
         //gets courses from courses list
@@ -49,14 +50,10 @@ public class Student
     }
 
     @Override
-    public double getAverage()
-    {
-        return average;
+    public String toString() {
+        return "Student{" +
+                "average=" + average +
+                ", courses=" + courses +
+                ", approvedCourses=" + approvedCourses +
+                '}';
     }
-
-    @Override
-    public String toString()
-    {
-        return "Student {" + super.toString() + courses"}";
-    }
-}

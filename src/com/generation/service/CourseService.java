@@ -83,7 +83,7 @@ public class CourseService
         for ( String key : courses.keySet() )
         {
             //creating a new instance of Course type which stores keys from courses map
-            Course course = courses.get( key ); //java is statically type my give a type to Course
+            Course course = courses.get( key ); //java is statically type will give a type to Course
             System.out.println( course ); //printing variable
         }
         System.out.println( "Enrolled Students" );

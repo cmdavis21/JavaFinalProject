@@ -40,9 +40,12 @@ public class Course
     }
 
     @Override
-    public String toString()
-    {
-        return "Course{" + "code='" + code + '\'' + ", name='" + name + '\'' + ", credits=" + credits + ", module="
-            + module + '}';
+    public String toString() {
+        return "Course{" +
+                "code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", credits=" + credits +
+                ", module=" + module +
+                '}';
     }
 }
